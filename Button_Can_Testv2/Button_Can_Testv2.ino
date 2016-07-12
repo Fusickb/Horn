@@ -148,7 +148,6 @@ void loop(void){
         if(digitalRead(nfet1)==HIGH){
 //          buttonPressed = true;
           digitalWrite(led, HIGH);
-          //Serial.println("poop")
           txmsg.id = 0x221;
           txmsg.len = 5;
           txmsg.buf[0] = honk[0];
